@@ -1,11 +1,13 @@
 (Introdução do grupo)
 
 Hoje em dia, vivemos vidas muito ocupadas, este projeto mesmo deve ter ocupado o tempo de todos aqui. E nessa ocupação, acontece muito de esquecermos muitas coisas. 
-Entre elas, contas para pagar, datas de vencimento, garantias, entre outros. Dessas coisas, várias ficam paradas no seu E-mail que você provavelmente esqueceu de checar
-já faz tempo. O nosso projeto seria para juntar tudo isso em um só lugar que te mantém avisado, caso essas datas estejam próximas, evitando de esquecer.
+Entre elas, contas para pagar, datas de vencimento, garantias, entre outros. Dessas coisas, várias ficam paradas no seu E-mail que você pode ter esquecido de checar
+já faz tempo. O nosso projeto seria para juntar tudo isso em um só lugar que te mantém avisado, caso datas importantes estejam próximas, ou lembrando de detalhes importantes, evitando de esquecer.
 
 Nosso software iria se integrar com o seu E-mail e outros apps como Copel, Sanepar, Streamings, entre outros de uma forma segura e de acordo com as normas da LGPD,
 e rastrear datas que você poderia acabar esquecendo, como contas, assinaturas, garantias e notas fiscais de compras.
 
 (Escopo)
 
+Então com tudo explicado, gostaria de reiterar então que nosso aplicativo irá fornecer aos nossos usuários mais tranquilidade ao
+receber avisos de coisas que ele possivelmente poderia perder ou esquecer no dia a dia, tudo de maneira segura e prática.
