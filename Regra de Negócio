@@ -1,0 +1,31 @@
+Escola de TI - Regra de negócio 
+
+R01 : Irá precisar de uma atentificação segura, e-mail com senha para autorização e um cadastro para acessar as contas
+
+R02 : Ter cadastro concluído por completo e aceito todas as integrações, das assinaturas, contas e compras com garantias
+
+R03 : Ter acesso a toda compra com garantia integrada ao e-mail e cadastrada no sistema, controlando cada compra com sua NF
+
+R04 : Processo de notificação ao cliente, tendo acesso ao controle de contas e históricos de gastos, integração com cada data de compra e vencimento
+
+R05 : Controle no processo de compras e assinaturas, sistema define um período de análise de 3 meses, para ter média de cálculo, o sistema identifica gastos 
+baixos ou acima da média e sugere o corte integral ou parcial deles.
+
+R06 : Sistema monitora durante 3 meses, e notifica ao cliente caso o fluxo de uso seja baixo
+
+R07 : O sistema terá que ter uma autorização e confirmação do cliente, para que seja liberado a integração
+
+R08 : Será aceito arquivos como PDF, JPEG e PNG, será permitido arquivo até 20MB, dados sensíveis identificado pela IA, devem ser criptografados. 
+
+R09 : Sistema vai ter acesso total ao controle de acesso dos contratos/assinaturas e quando estiver perto do prazo de vencimento notificar ao usuário 
+se deseja cancelar ou renovar
+
+R10 : Confirmação do e-mail com senha, a integração vai pegar tudo que chega ao e-mail, sendo compra, assinatura e boleto/faturas e 
+passar pro sistema automaticamente armazenando separado, o que é cada compra, seus boletos e faturas a vencer e contratos de assinaturas
+
+R011:  cláusula de multa será sobre rescisórias, por atraso e descumprimento, já a dos prazos será período avisos prévios, renovação automática e arrependimento.
+Sempre que uma cláusula de multa for identificada, o sistema deve tentar extrair o valor absoluto ou percentual. Para prazos, deve extrair a quantidade de dias/meses
+e o marco temporal inicial. Caso não seja encontrada nenhuma cláusula critica, o sistema deve notificar para uma revisão manual.
+
+R012: Notas fiscais que chegam com e-mail por meio da integração, vai ser automaticamente identificada pelo sistema e armazenada no painel de cada compra feita
+pelo usuário
