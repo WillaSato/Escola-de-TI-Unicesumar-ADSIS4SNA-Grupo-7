@@ -5,8 +5,8 @@
 **RN01 – Cadastro e autenticação do usuário**
 Para acessar sua conta, o usuário deverá possuir cadastro válido e realizar autenticação por e-mail e senha. O e-mail deverá ser confirmado antes da liberação completa da conta. Dados de autenticação nunca poderão ser armazenados em texto puro.
 
-**RN02 – Exibição de informações no dashboard**
-O dashboard deverá apresentar apenas informações pertencentes ao usuário autenticado ou compartilhadas com ele por outros usuários autorizados. A ausência de alguma integração não deverá impedir o acesso ao aplicativo; nesse caso, somente os módulos sem dados deverão permanecer vazios ou indicar a necessidade de configuração.
+**RN02 – Dashboard principal:** Após a autenticação, o sistema deverá exibir em uma única tela contas pendentes, garantias, assinaturas,
+contratos e alertas do usuário, priorizando informações críticas e permitindo acesso direto aos detalhes de cada item.
 
 **RN03 – Cadastro automático de produtos e garantias**
 Um produto identificado por uma compra deverá ser relacionado, sempre que possível, à sua nota fiscal, data da compra, estabelecimento, valor e período de garantia. Caso os dados necessários não possam ser identificados automaticamente, o produto deverá ficar pendente de confirmação ou complementação pelo usuário.
