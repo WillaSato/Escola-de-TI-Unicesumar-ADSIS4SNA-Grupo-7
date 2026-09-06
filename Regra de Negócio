@@ -56,7 +56,7 @@ Sempre que uma multa for identificada, o sistema deverá tentar extrair seu valo
 Notas fiscais e manuais identificados automaticamente deverão ser associados ao respectivo produto sempre que houver informações suficientes para estabelecer essa relação. Quando não for possível identificar o produto correspondente, o documento deverá permanecer pendente de classificação.
 
 **RN13 – Relatórios de gastos**
-Os relatórios deverão considerar somente movimentações válidas e pertencentes ao usuário. Os cálculos deverão respeitar o período selecionado e poderão apresentar totais, médias, evolução, categorias e comparação entre períodos.
+Os relatórios deverão considerar somente movimentações válidas e pertencentes ao usuário. Os cálculos deverão respeitar o período selecionado e poderão apresentar totais, médias, evolução, categorias e comparação entre períodos
 
 **RN14 – Upload manual de documentos**
 O usuário poderá enviar manualmente PDFs e imagens para análise. Todo arquivo deverá passar pelas mesmas regras de validação, segurança, classificação e processamento utilizadas nos documentos obtidos automaticamente.
