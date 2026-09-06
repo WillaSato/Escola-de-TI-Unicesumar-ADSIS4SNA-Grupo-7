@@ -27,14 +27,17 @@ O sistema deverá analisar assinaturas recorrentes e identificar aumentos de pre
 Sempre que houver histórico suficiente para indicar baixo uso de uma assinatura, o usuário poderá ser avisado se deseja renovar mesmo assim ou acabar cancelando.
 
 **RN07 – Autorização para integração com e-mail**
-Nenhuma conta de e-mail poderá ser integrada sem autorização explícita do usuário (e-mail e senha). A integração deverá utilizar um mecanismo seguro de autorização e poder ser cancelado pelo usuário a qualquer momento.
+Nenhuma conta de e-mail poderá ser integrada sem autorização explícita do usuário (e-mail e senha).
+A integração deverá utilizar um mecanismo seguro de autorização e poder ser cancelado pelo usuário a qualquer momento.
 
 
 **RN08 – Processamento de documentos por Inteligência Artificial**
-O sistema deverá aceitar documentos em PDF, JPEG e PNG, respeitando o limite máximo de 20 MB por arquivo. Arquivos inválidos, corrompidos ou superiores ao limite deverão ser rejeitados antes do processamento.
+O sistema deverá aceitar documentos em PDF, JPEG e PNG, respeitando o limite máximo de 20 MB por arquivo.
+Arquivos inválidos, corrompidos ou superiores ao limite deverão ser rejeitados antes do processamento.
 
 **RN09 – Controle de contratos e renovações**
-Todo contrato que possuir prazo de vigência, renovação ou cancelamento identificado deverá possuir suas datas registradas. O sistema deverá alertar o usuário. O sistema não poderá cancelar ou renovar contratos automaticamente sem autorização do usuário.
+Todo contrato que possuir prazo de vigência, renovação ou cancelamento identificado deverá possuir suas datas registradas.
+O sistema deverá alertar o usuário. O sistema não poderá cancelar ou renovar contratos automaticamente sem autorização do usuário.
 
 **RN10 – Identificação automática de e-mails**
 Após a autorização da integração, o sistema deverá analisar os e-mails recebidos e identificar automaticamente mensagens relacionadas a compras, notas fiscais, boletos, faturas, assinaturas e contratos.
@@ -50,51 +53,71 @@ Na análise de contratos, serão consideradas críticas, entre outras, cláusula
 * prazo para cancelamento;
 * direito de arrependimento.
 
-Sempre que uma multa for identificada, o sistema deverá tentar extrair seu valor absoluto ou percentual. Para prazos, deverá tentar identificar a quantidade de dias ou meses e o evento que inicia a contagem. Caso a informação não possa ser extraída com confiança suficiente, deverá ser marcada para revisão do usuário.
+Sempre que uma multa for identificada, o sistema deverá tentar extrair seu valor absoluto ou percentual.
+Para prazos, deverá tentar identificar a quantidade de dias ou meses e o evento que inicia a contagem. Caso a informação não possa ser extraída com confiança suficiente, deverá ser marcada para revisão do usuário.
 
 **RN12 – Organização de notas fiscais e manuais**
-Notas fiscais e manuais identificados automaticamente deverão ser associados ao respectivo produto sempre que houver informações suficientes para estabelecer essa relação. Quando não for possível identificar o produto correspondente, o documento deverá permanecer pendente de classificação.
+Notas fiscais e manuais identificados automaticamente deverão ser associados ao respectivo produto sempre que houver informações suficientes para estabelecer essa relação. 
+Quando não for possível identificar o produto correspondente, o documento deverá permanecer pendente de classificação.
 
 **RN13 – Relatórios de gastos**
-Os relatórios deverão considerar somente movimentações válidas e pertencentes ao usuário. Os cálculos deverão respeitar o período selecionado e poderão apresentar totais, médias, evolução, categorias e comparação entre períodos
+Os relatórios deverão considerar somente movimentações válidas e pertencentes ao usuário.
+Os cálculos deverão respeitar o período selecionado e poderão apresentar totais, médias, evolução, categorias e comparação entre períodos
 
 **RN14 – Upload manual de documentos**
-O usuário poderá enviar manualmente PDFs e imagens para análise. Todo arquivo deverá passar pelas mesmas regras de validação, segurança, classificação e processamento utilizadas nos documentos obtidos automaticamente.
+O usuário poderá enviar manualmente PDFs e imagens para análise.
+Todo arquivo deverá passar pelas mesmas regras de validação, segurança, classificação e processamento utilizadas nos documentos obtidos automaticamente.
 
 **RN15 – Processamento em segundo plano**
-Varreduras de e-mail, OCR e análises de documentos deverão ocorrer de forma assíncrona sempre que possível, sem impedir o usuário de acessar e utilizar as demais funcionalidades do aplicativo. O usuário deverá poder visualizar quando um documento ainda estiver em processamento. E-mail ou PDF deu algum erro, o sistema deve registrar o erro e seguir processando os demais sem travar ou interromper o app.
+Varreduras de e-mail, OCR e análises de documentos deverão ocorrer de forma assíncrona sempre que possível, 
+sem impedir o usuário de acessar e utilizar as demais funcionalidades do aplicativo. O usuário deverá poder visualizar quando um documento ainda estiver em processamento. 
+E-mail ou PDF deu algum erro, o sistema deve registrar o erro e seguir processando os demais sem travar ou interromper o app.
 
 **RN16 – Acesso rápido a informações críticas**
-Alertas críticos, contas próximas do vencimento e documentos relevantes deverão possuir acesso direto pela tela principal, evitando etapas ou acesso a menu. Toda navegação deve ser por toque/clique em elementos já exibidos (botões, cards, ícones). Usuário não precisa preencher nada por digitalização, será apenas por toque.
+Alertas críticos, contas próximas do vencimento e documentos relevantes deverão possuir acesso direto pela tela principal, 
+evitando etapas ou acesso a menu. Toda navegação deve ser por toque/clique em elementos já exibidos (botões, cards, ícones). 
+Usuário não precisa preencher nada por digitalização, será apenas por toque.
 
 **RN17 – Compatibilidade móvel**
-As funcionalidades principais deverão manter comportamento equivalente nos dispositivos Android e iOS suportados, mas adaptando a diferença de cada Android e IOS, pois tem resoluções e tamanhos diferentes, mas mantendo as funcionalidades do app da mesma forma. 
+As funcionalidades principais deverão manter comportamento equivalente nos dispositivos Android e iOS suportados, 
+mas adaptando a diferença de cada Android e IOS, pois tem resoluções e tamanhos diferentes,
+mas mantendo as funcionalidades do app da mesma forma. 
 
 **RN18 – Retenção mínima de dados brutos**
-Após a conclusão do processamento, o sistema deverá conservar somente os dados estruturados e documentos que precisem ser mantidos conforme a finalidade da aplicação. Arquivos temporários e conteúdos brutos utilizados  durante o processamento vão ser descartados após serem usados. 
+Após a conclusão do processamento, o sistema deverá conservar somente os dados estruturados e documentos que precisem ser mantidos conforme a finalidade da aplicação.
+Arquivos temporários e conteúdos brutos utilizados  durante o processamento vão ser descartados após serem usados. 
 
 **RN19 – Processamento de alto volume**
-Solicitações de OCR, análise de documentos e sincronizações vão ser processadas de uma forma independente, evitando que um grande volume de solicitações de um usuário prejudique o acesso de outros usuários.
+Solicitações de OCR, análise de documentos e sincronizações vão ser processadas de uma forma independente, 
+evitando que um grande volume de solicitações de um usuário prejudique o acesso de outros usuários.
 
 **RN20 – Recuperação da conta em novo dispositivo**
-Após autenticação válida em um novo dispositivo, o usuário deverá recuperar seus dados, garantias, alertas e histórico sincronizados. Informações sensíveis deverão permanecer protegidas durante todo o processo de restauração. Em condições normais de conexão, a sincronização inicial deverá buscar atender ao limite de até dois minutos.
+Após autenticação válida em um novo dispositivo, o usuário deverá recuperar seus dados, garantias, alertas e histórico sincronizados.
+Informações sensíveis deverão permanecer protegidas durante todo o processo de restauração. Em condições normais de conexão, a sincronização inicial deverá buscar atender ao limite de até dois minutos.
 
 **RN21 – Precisão da Inteligência Artificial**
-A solução de extração automática deverá buscar precisão mínima de 85% nos campos avaliados. Dados cuja confiança esteja abaixo do limite definido para aquele tipo de informação deverão ser apresentados como pendentes de confirmação, evitando que informações incertas sejam tratadas como definitivas.
+A solução de extração automática deverá buscar precisão mínima de 85% nos campos avaliados.
+Dados cuja confiança esteja abaixo do limite definido para aquele tipo de informação deverão ser apresentados como pendentes de confirmação, 
+evitando que informações incertas sejam tratadas como definitivas.
 
 **RN22 – Carregamento da tela principal**
-Em condições normais de conexão e operação, as principais informações e alertas do dashboard deverão ser disponibilizados em até três segundos. Processamentos pesados não deverão bloquear o carregamento inicial.
+Em condições normais de conexão e operação, as principais informações e alertas do dashboard deverão ser disponibilizados em até três segundos.
+Processamentos pesados não deverão bloquear o carregamento inicial.
 
 **RN23 – Consumo de bateria**
-Rotinas em segundo plano deverão respeitar as limitações dos sistemas operacionais móveis e evitar execuções contínuas desnecessárias. Processamentos pesados deverão ser agrupados ou adiados quando não forem urgentes.
+Rotinas em segundo plano deverão respeitar as limitações dos sistemas operacionais móveis e evitar execuções contínuas desnecessárias.
+Processamentos pesados deverão ser agrupados ou adiados quando não forem urgentes.
 
 **RN24 – Proteção local do aplicativo**
 O usuário pode escolher nas configurações qual método de autenticação deseja, se é senha ou 
-biometria. Se não tiver suporte para biometria, ele da opção direta da senha. Se a biometria não reconhecer, ele pode usar a senha local e ter 3 tentativas. Se é liberado o acesso após a validação.
+biometria. Se não tiver suporte para biometria, ele da opção direta da senha. Se a biometria não reconhecer,
+ele pode usar a senha local e ter 3 tentativas. Se é liberado o acesso após a validação.
 
 **RN25 – Tratamento de erros**
-Falhas de conexão, sincronização, OCR ou leitura de documentos deverão ser informadas ao usuário por mensagens compreensíveis. Mensagens exibidas ao usuário não deverão revelar senhas, tokens, credenciais ou informações técnicas sensíveis.
-Ex: A falha na leitura de documentos: "Documento deve estar corrompido, envie outro arquivo, por favor". Falha de OCR:"Não conseguimos ler as informações do documento. Tente tirar a foto novamente com boa iluminação". Falha de sincronização: "Alguns dados ainda não foram atualizados, toque aqui pra tentar sincronizar novamente."
+Falhas de conexão, sincronização, OCR ou leitura de documentos deverão ser informadas ao usuário por mensagens compreensíveis. 
+Mensagens exibidas ao usuário não deverão revelar senhas, tokens, credenciais ou informações técnicas sensíveis.
+Ex: A falha na leitura de documentos: "Documento deve estar corrompido, envie outro arquivo, por favor". Falha de OCR:"Não conseguimos ler as informações do documento.
+Tente tirar a foto novamente com boa iluminação". Falha de sincronização: "Alguns dados ainda não foram atualizados, toque aqui pra tentar sincronizar novamente."
 
 **RN26 – Evolução do sistema**
 O sistema deve ser desenvolvido em módulos independentes, permitindo que novas funcionalidades sejam adicionadas ou atualizadas sem exigir a interrupção total do serviço.
@@ -103,67 +126,95 @@ O sistema deve ser desenvolvido em módulos independentes, permitindo que novas 
 O aplicativo deverá priorizar conexão Wi-Fi para envio ou processamento de arquivos pesados. Caso o usuário permita processamento por dados móveis, essa preferência poderá ser alterada nas configurações.
 
 **RN28 – Categorias**
-Produtos, documentos, contratos e demais registros poderão ser classificados em categorias como Eletrônicos, Imóveis, Veículos e Contas Fixas. O usuário deve poder selecionar categoria no momento do cadastro e filtrar itens por categoria posteriormente.
+Produtos, documentos, contratos e demais registros poderão ser classificados em categorias como Eletrônicos, Imóveis, Veículos e Contas Fixas. 
+O usuário deve poder selecionar categoria no momento do cadastro e filtrar itens por categoria posteriormente.
 
 **RN29 – Busca geral**
-A busca deverá pesquisar apenas informações às quais o usuário autenticado possui permissão de acesso. A pesquisa poderá considerar nomes, categorias, empresas, documentos, produtos, contratos e outras informações indexadas pelo sistema.
+A busca deverá pesquisar apenas informações às quais o usuário autenticado possui permissão de acesso.
+A pesquisa poderá considerar nomes, categorias, empresas, documentos, produtos, contratos e outras informações indexadas pelo sistema.
 
 **RN30 – Exportação de dados**
-O usuário poderá exportar seus próprios dados e histórico nos formatos PDF ou CSV. Somente informações às quais o usuário possui autorização de acesso poderão fazer parte da exportação.
+O usuário poderá exportar seus próprios dados e histórico nos formatos PDF ou CSV. 
+Somente informações às quais o usuário possui autorização de acesso poderão fazer parte da exportação.
 
 **RN31 – Cadastro por integração com lojas e emissores**
-Quando uma compra for recebida por integração confiável, o sistema deverá criar automaticamente o registro correspondente e relacionar, quando disponíveis, produto, nota fiscal, garantia e manual. Antes da criação, deverá ser executada uma verificação para evitar registros duplicados.
+Quando uma compra for recebida por integração confiável, o sistema deverá criar automaticamente o registro correspondente e relacionar, 
+quando disponíveis, produto, nota fiscal, garantia e manual. Antes da criação, deverá ser executada uma verificação para evitar registros duplicados.
 
 **RN32 – Compartilhamento de bens e documentos**
-O proprietário de um registro poderá conceder acesso a determinados bens ou documentos para outros usuários. O compartilhamento deverá indicar quais informações poderão ser visualizadas ou alteradas, e o proprietário poderá revogar o acesso posteriormente.
+O proprietário de um registro poderá conceder acesso a determinados bens ou documentos para outros usuários. 
+O compartilhamento deverá indicar quais informações poderão ser visualizadas ou alteradas, e o proprietário poderá revogar o acesso posteriormente.
 
 **RN33 – Proteção de dados sensíveis**
-Dados transmitidos entre aplicativo e servidor deverão utilizar conexão segura com HTTPS/TLS. Dados sensíveis armazenados deverão utilizar mecanismos adequados de criptografia em repouso. Senhas deverão ser armazenadas utilizando funções criptográficas próprias para armazenamento de credenciais, e não por criptografia reversível simples.
+Dados transmitidos entre aplicativo e servidor deverão utilizar conexão segura com HTTPS/TLS. 
+Dados sensíveis armazenados deverão utilizar mecanismos adequados de criptografia em repouso.
+Senhas deverão ser armazenadas utilizando funções criptográficas próprias para armazenamento de credenciais, e não por criptografia reversível simples.
 
 **RN34 – Backup das informações**
-O sistema deverá executar backups periódicos das bases de dados e demais informações persistentes, preferencialmente diária. O acesso aos backups deverá ser restrito e protegido contra acesso não autorizado.
+O sistema deverá executar backups periódicos das bases de dados e demais informações persistentes, preferencialmente diária.
+O acesso aos backups deverá ser restrito e protegido contra acesso não autorizado.
 
 **RN35 – Registro de auditoria**
-Ações relevantes, como acessos, alterações, compartilhamentos e modificações importantes em documentos, deverão gerar registros de auditoria contendo, quando aplicável, usuário responsável, ação realizada, registro afetado, data e horário.
+Ações relevantes, como acessos, alterações, compartilhamentos e modificações importantes em documentos,
+deverão gerar registros de auditoria contendo, quando aplicável, usuário responsável, ação realizada, registro afetado, data e horário.
 
 **RN36 – Sincronização após perda de conexão**
-Quando uma operação permitida for realizada sem conexão, ela deverá permanecer pendente localmente até ser possível sincronizá-la com o servidor. O sistema deverá evitar que uma mesma operação seja enviada mais de uma vez durante a sincronização.
+Quando uma operação permitida for realizada sem conexão, ela deverá permanecer pendente localmente até ser possível sincronizá-la com o servidor. 
+O sistema deverá evitar que uma mesma operação seja enviada mais de uma vez durante a sincronização.
 
 **RN37 – Autenticação em dois fatores**
-O usuário poderá ativar a autenticação em dois fatores (MFA) para aumentar a segurança da conta. Quando o recurso estiver habilitado, novos acessos deverão exigir a validação de um segundo fator, além da credencial principal, conforme os métodos e políticas de segurança definidos pelo sistema.
+O usuário poderá ativar a autenticação em dois fatores (MFA) para aumentar a segurança da conta. Quando o recurso estiver habilitado, 
+novos acessos deverão exigir a validação de um segundo fator, além da credencial principal, conforme os métodos e políticas de segurança definidos pelo sistema.
 
 **RN38 – Personalização do dashboard**
-O usuário poderá personalizar o dashboard, escolhendo quais informações, indicadores ou módulos disponíveis deseja priorizar. As preferências deverão permanecer vinculadas à conta do usuário e ser mantidas após novas autenticações ou acessos realizados em outros dispositivos.
+O usuário poderá personalizar o dashboard, escolhendo quais informações, indicadores ou módulos disponíveis deseja priorizar. 
+As preferências deverão permanecer vinculadas à conta do usuário e ser mantidas após novas autenticações ou acessos realizados em outros dispositivos.
 
 **RN39 – Observações pessoais**
-O usuário poderá adicionar, editar e remover observações pessoais relacionadas aos registros que possui permissão para acessar ou alterar. Cada observação deverá permanecer vinculada ao respectivo registro e ao usuário responsável por sua criação.
+O usuário poderá adicionar, editar e remover observações pessoais relacionadas aos registros que possui permissão para acessar ou alterar.
+Cada observação deverá permanecer vinculada ao respectivo registro e ao usuário responsável por sua criação.
 
 **RN40 – Compartilhamento de informações específicas**
-O usuário poderá compartilhar apenas informações ou registros selecionados, sem conceder acesso completo à sua conta ou ao item de origem. Toda permissão de compartilhamento deverá possuir um responsável, definir claramente o conteúdo disponibilizado e poderá ser revogada pelo proprietário a qualquer momento.
+O usuário poderá compartilhar apenas informações ou registros selecionados, sem conceder acesso completo à sua conta ou ao item de origem.
+Toda permissão de compartilhamento deverá possuir um responsável, definir claramente o conteúdo disponibilizado e poderá ser revogada pelo proprietário a qualquer momento.
 
 **RN41 – Arquivamento de registros**
-O usuário poderá arquivar registros que não deseja visualizar nas listagens principais. Registros arquivados deverão permanecer armazenados no sistema, podendo ser consultados e restaurados posteriormente. O arquivamento não deverá ser tratado como exclusão definitiva.
+O usuário poderá arquivar registros que não deseja visualizar nas listagens principais. Registros arquivados deverão permanecer armazenados no sistema,
+podendo ser consultados e restaurados posteriormente. O arquivamento não deverá ser tratado como exclusão definitiva.
 
 **RN42 – Consistência da interface**
-Funcionalidades equivalentes deverão seguir padrões consistentes de navegação, nomenclatura, componentes visuais, mensagens e comportamento em todas as telas do aplicativo, garantindo uma experiência uniforme ao usuário.
+Funcionalidades equivalentes deverão seguir padrões consistentes de navegação, nomenclatura, componentes visuais, mensagens e comportamento em todas as telas do aplicativo, 
+garantindo uma experiência uniforme ao usuário.
 
 **RN43 – Validação dos dados**
-Antes do armazenamento definitivo, o sistema deverá validar campos obrigatórios, formatos, tipos de dados, valores permitidos e relacionamentos entre registros. Informações inválidas ou inconsistentes não deverão ser persistidas como registros válidos, e o usuário deverá ser informado sobre os dados que precisam ser corrigidos.
+Antes do armazenamento definitivo, o sistema deverá validar campos obrigatórios, formatos, tipos de dados, valores permitidos e relacionamentos entre registros.
+Informações inválidas ou inconsistentes não deverão ser persistidas como registros válidos, e o usuário deverá ser informado sobre os dados que precisam ser corrigidos.
 
 **RN44 – Contatos de referência**
-O usuário poderá cadastrar ou relacionar contatos, empresas, fornecedores e responsáveis a produtos, contratos, serviços ou outros registros compatíveis. Um mesmo contato poderá ser associado a múltiplos registros, evitando a necessidade de cadastros duplicados.
+O usuário poderá cadastrar ou relacionar contatos, empresas, fornecedores e responsáveis a produtos, contratos, serviços ou outros registros compatíveis. 
+Um mesmo contato poderá ser associado a múltiplos registros, evitando a necessidade de cadastros duplicados.
 
 **RN45 – Sincronização entre dispositivos**
-Somente dispositivos autenticados e autorizados poderão sincronizar informações da conta. Alterações válidas realizadas em um dispositivo deverão ser enviadas ao servidor e disponibilizadas aos demais dispositivos vinculados após a sincronização.
+Somente dispositivos autenticados e autorizados poderão sincronizar informações da conta. Alterações válidas realizadas em um dispositivo
+deverão ser enviadas ao servidor e disponibilizadas aos demais dispositivos vinculados após a sincronização.
 
 **RN46 – Funcionamento durante instabilidade de internet**
-Durante períodos temporários de ausência ou instabilidade de conexão, o aplicativo deverá permitir o acesso às informações previamente sincronizadas e às funcionalidades definidas como disponíveis offline. Operações que dependam obrigatoriamente do servidor deverão informar sua indisponibilidade e poderão ser retomadas após o restabelecimento da conexão.
+Durante períodos temporários de ausência ou instabilidade de conexão, o aplicativo deverá permitir o acesso às informações previamente
+sincronizadas e às funcionalidades definidas como disponíveis offline. Operações que dependam obrigatoriamente do servidor deverão informar sua
+indisponibilidade e poderão ser retomadas após o restabelecimento da conexão.
 
 **RN47 – Prevenção de duplicidade**
-Antes da criação manual ou automática de um registro, o sistema deverá verificar a existência de informações potencialmente duplicadas. A análise poderá considerar campos como número da nota fiscal, empresa, valor, data, produto, contrato ou outros identificadores relevantes. Quando houver indícios de duplicidade, o sistema deverá impedir a criação automática ou solicitar confirmação explícita do usuário antes de prosseguir.
+Antes da criação manual ou automática de um registro, o sistema deverá verificar a existência de informações potencialmente duplicadas.
+A análise poderá considerar campos como número da nota fiscal, empresa, valor, data, produto, contrato ou outros identificadores relevantes.
+Quando houver indícios de duplicidade, o sistema deverá impedir a criação automática ou solicitar confirmação explícita do usuário antes de prosseguir.
 
 **RQ48 – Relato de problemas**
-O sistema deverá disponibilizar uma opção específica para que o usuário possa reportar problemas, erros ou comportamentos inesperados encontrados durante a utilização do aplicativo. O relato poderá conter uma descrição do problema e outras informações necessárias para auxiliar na sua identificação e resolução.
+O sistema deverá disponibilizar uma opção específica para que o usuário possa reportar problemas,
+erros ou comportamentos inesperados encontrados durante a utilização do aplicativo. O relato poderá conter uma descrição 
+do problema e outras informações necessárias para auxiliar na sua identificação e resolução.
 
 **RQ49 – Gerenciamento de e-mails e exclusão da conta**
-O sistema deverá permitir que o usuário gerencie os e-mails vinculados à sua conta, possibilitando a desvinculação de um ou mais endereços, desde que seja mantido ao menos um meio válido de acesso quando necessário. O usuário também deverá possuir a opção de solicitar a exclusão definitiva de sua conta e dos dados associados, respeitando as regras de segurança, confirmação de identidade e retenção de dados aplicáveis ao sistema.
+O sistema deverá permitir que o usuário gerencie os e-mails vinculados à sua conta, possibilitando a desvinculação 
+de um ou mais endereços, desde que seja mantido ao menos um meio válido de acesso quando necessário.
+O usuário também deverá possuir a opção de solicitar a exclusão definitiva de sua conta e dos dados associados,
+respeitando as regras de segurança, confirmação de identidade e retenção de dados aplicáveis ao sistema.
