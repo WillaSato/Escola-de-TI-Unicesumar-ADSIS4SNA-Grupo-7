@@ -3,23 +3,28 @@ Escola de TI — Regras de Negócio
 
 
 **RN01 – Cadastro e autenticação do usuário**
-O usuário deverá possuir cadastro válido e realizar autenticação por e-mail e senha. O e-mail deverá ser confirmado antes da liberação completa da conta. Dados de autenticação nunca poderão ser armazenada sem criptografia.
+O usuário deverá possuir cadastro válido e realizar autenticação por e-mail e senha. O e-mail deverá ser confirmado antes da liberação completa da conta.
+Dados de autenticação nunca poderão ser armazenada sem criptografia.
 
 **RN02 – Exibição de informações no dashboard**
 **RN02 – Dashboard principal:** Após a autenticação, o sistema deverá exibir em uma única tela contas pendentes, garantias, assinaturas,
 contratos e alertas do usuário, priorizando informações críticas e permitindo acesso direto aos detalhes de cada item.
 
 **RN03 – Cadastro automático de produtos e garantias**
-Um produto identificado por uma compra deverá ser relacionado, sempre que possível, à sua nota fiscal, data da compra, estabelecimento, valor e período de garantia. Caso os dados necessários não possam ser identificados automaticamente, o produto deverá ficar pendente de confirmação ou complemento direto pelo usuário.
+Um produto identificado por uma compra deverá ser relacionado, sempre que possível, à sua nota fiscal, data da compra, estabelecimento, 
+valor e período de garantia. Caso os dados necessários não possam ser identificados automaticamente, o produto deverá ficar pendente de confirmação ou complemento direto pelo usuário.
 
 **RN04 – Notificações de contas e vencimentos**
-Contas identificadas com data de vencimento deverão gerar alertas antes ou no vencimento, conforme as configurações de notificação do usuário. Uma conta quitada, cancelada ou arquivada não deverá continuar gerando alertas de pagamento.
+Contas identificadas com data de vencimento deverão gerar alertas antes ou no vencimento, conforme as configurações de notificação do usuário.
+Uma conta quitada, cancelada ou arquivada não deverá continuar gerando alertas de pagamento.
 
 **RN05 – Cálculo da média de gastos**
-Para os cálculos financeiro, o sistema deverá utilizar preferencialmente pelo menos três meses de histórico disponível. A média deverá considerar apenas gastos válidos e classificados. O sistema poderá identificar gastos acima da média e estimar possíveis economias com redução ou cancelamento de despesas frequentes.
+Para os cálculos financeiro, o sistema deverá utilizar preferencialmente pelo menos três meses de histórico disponível. 
+A média deverá considerar apenas gastos válidos e classificados. O sistema poderá identificar gastos acima da média e estimar possíveis economias com redução ou cancelamento de despesas frequentes.
 
 **RN06 – Monitoramento de assinaturas**
-O sistema deverá analisar assinaturas recorrentes e identificar aumentos de preço, cobranças frequentes e possíveis gastos desnecessários. Sempre que houver histórico suficiente para indicar baixo uso de uma assinatura, o usuário poderá ser avisado se deseja renovar mesmo assim ou acabar cancelando.
+O sistema deverá analisar assinaturas recorrentes e identificar aumentos de preço, cobranças frequentes e possíveis gastos desnecessários.
+Sempre que houver histórico suficiente para indicar baixo uso de uma assinatura, o usuário poderá ser avisado se deseja renovar mesmo assim ou acabar cancelando.
 
 **RN07 – Autorização para integração com e-mail**
 Nenhuma conta de e-mail poderá ser integrada sem autorização explícita do usuário (e-mail e senha). A integração deverá utilizar um mecanismo seguro de autorização e poder ser cancelado pelo usuário a qualquer momento.
