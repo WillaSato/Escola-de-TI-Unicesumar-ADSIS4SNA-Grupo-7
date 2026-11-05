@@ -1,0 +1,46 @@
+GitHub
+
+Comandos:
+
+- git init: comando que cria um repositório vazio no diretório
+- git clone [url]: cria uma cópia local de um repo. remoto
+- git add: adiciona arq. à área de staging
+- git commit: cria um commit com mudanças
+- git status: mostra o status atual do repo.
+- git log: exibe o histórico de commits
+- git branch: Lista, cria ou exclui branches
+	- git branch -d: deleta uma branch
+	- git checkout: transita entre branches
+	- git checkout -b: cria e transita para a nova branch
+- git checkout: muda para um branch específico
+- git merge: mescla uma branch com a atual
+- git remote: gerencia repo. remotos conectados
+- git push: envia commits locais para um repo. remoto
+- git pull: atualiza o repo. local com mudanças feitas no remoto
+- git fetch: baixa objetos e refs de outro repo.
+- git diff (arquivo): apresenta as informações conflituosas em um arquivo durante um merge
+- git stash save: salva temporariamente as mudanças não commitadas
+- git stash list: lista todas as stashes salvas
+- git stash apply: aplica a stash mais recente sem removê-la
+- git stash pop: aplica a stash mais recente e a remove da pilha
+
+Anotações:
+
+- É realizado vários commits incrementais no projeto, e não subir um projeto inteiro em somente um commit
+- Merge é a junção de todas as ramificações em um no fim
+- "Origin" é o principal apelido de um repositório remoto no Git
+- Um conflito é mais de uma pessoa mexendo no mesmo código ao mesmo tempo
+- Tags
+	- Lightweight Tags: Simples ponteiros para commits específicos
+		- git tag [nome]
+	- Annotated Tags: Contêm metadados adicionais como autor e data
+		- git tag -a [nome] -m "mensagem"
+	- Gerenciamento: Liste tags com:
+		- git tag 
+- Hooks são comandos que serão executados antes ou depois de eventos como commit, push e receive
+	- Por exemplo um Hook que indenta o código antes de fazer o push
+- Master: branch contendo o código de produção estável
+- Develop: Branch de integração para novas features
+- Feature: Branch para desenv. de novas funcionalidades
+- Release: Prepara o código para uma nova versão
+- Hotfix: Para correções rápidas em produção
