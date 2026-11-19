@@ -1,0 +1,16 @@
+.product-form { max-width: 760px; display: grid; gap: 17px; }
+.form-columns { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0,1fr)); }
+.form-actions { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; margin-top: 5px; }
+.field-error { font-size: 13px; font-weight: 400; }
+.archive-dialog {
+  width: min(440px, calc(100% - 32px)); border: 1px solid var(--line); border-radius: 14px;
+  padding: 24px; color: var(--ink); background: var(--surface);
+}
+.archive-dialog::backdrop { background: #122a32ab; }
+.archive-dialog > svg { color: var(--teal); }
+.archive-dialog h2 { font-size: 23px; margin: 8px 0; }
+.archive-dialog p { color: var(--muted); margin-bottom: 18px; }
+.archive-dialog .error-text { color: var(--danger); }
+@media (max-width: 540px) {
+  .form-columns { grid-template-columns: 1fr; }
+}
